@@ -31,7 +31,7 @@ async function fetchMissionTasks(extensionId, proxy, token) {
         return null;
     }
 }
-let payload = {referrer: "EoKtoJ377"}
+let payload = {referrer: "WUdtKl217"}
 async function claimMissionTasks(extensionId, proxy, token, taskIds) {
     const apiClient = createApiClient(proxy, token); 
 
