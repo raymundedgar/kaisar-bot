@@ -1,15 +1,12 @@
 import * as Upils from './utils/exporter.js';
 
 async function pingAndUpdate(token, extensionId, proxy) {
-    const agent = new Upils.HttpsProxyAgent(proxy);
-
     const apiClient = Upils.axios.create({
         baseURL: 'https://zero-api.kaisar.io/',
         headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}` 
         },
-        agent,
     });
 
     try {
