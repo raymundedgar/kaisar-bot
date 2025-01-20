@@ -1,14 +1,12 @@
 import { logger, HttpsProxyAgent, axios } from './exporter.js';
 
 function createApiClient(proxy, token) {
-    const agent = new HttpsProxyAgent(proxy);
     return axios.create({
         baseURL: 'https://zero-api.kaisar.io/',
         headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`
-        },
-        agent,
+        }
     });
 }
 async function fetchMissionTasks(extensionId, proxy, token) {
