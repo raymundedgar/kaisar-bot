@@ -42,9 +42,9 @@ Transform your compute power into real earnings
    ```bash
    npm install
    ```
-3. Register or Login to get Access Token
+3. Enter the bearer token
    ```bash
-   npm run register
+   nano tokens.txt
    ```
 4. Create Extension ID for new account
    ```bash
