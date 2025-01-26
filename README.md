@@ -46,11 +46,7 @@ Transform your compute power into real earnings
    ```bash
    nano tokens.txt
    ```
-4. Create Extension ID for new account
+4. Create Extension ID for new account and run the bot
    ```bash
-   npm run setup
-   ```
-5. Run the bot:
-   ```bash
-   npm run start
+   npm run setup && npm run start
    ```
